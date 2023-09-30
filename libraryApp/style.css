@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #181818;
+}
+
+#container{
+    padding: 40px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns:repeat(auto-fit , minmax(20rem ,1fr) );
+    place-items: center;
+}
+header{
+    background-color: #212121;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    flex-wrap: wrap;
+}
+.logo{
+    color: aliceblue;
+    font-size: 4em;
+}
+.add-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 10px;
+    background-color: #00CE79;
+    padding: 20px;
+    border-radius: 20px;
+}
+.card{
+    height: fit-content;
+    width: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    background: #212121;
+    color: aliceblue;
+    padding: 20px;
+    position: relative;
+
+}
+.card > p{
+    font-size: 1.5em;
+    
+}
+
+.card > p:first-child{
+    font-size: 1.5em;
+    text-align: center;
+    background-color: #00E472;
+    color: #181818 ;
+    border-radius: 20px;
+    padding: 20px 30px;
+    font-weight: bold;
+}
+.card > p:nth-child(2){
+    padding: 40px 0px 0pc 0px;
+}
+.card > p:nth-child(2)::before{
+    content: "Author : ";
+
+}
+.card > p:nth-child(3)::before{
+    content: "Pages : ";
+
+}
+.card > p:nth-child(4)::before{
+    content: "Status : ";
+
+}
+.new-book-sec{
+    position: absolute;
+    top: 0%;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0 , 0.5);
+    z-index: 99;
+    display: none;
+    place-items: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-shrink: inherit;
+    background-color: #181818;
+    padding: 40px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.form input{
+    padding: 10px;
+    width: 200px;
+    background-color: #212121;
+    border: 0;
+    border-radius: 10px;
+    font-size: 1em;
+    color: #fff;
+
+}
+.form > input[type="button"]{
+    background-color: #00CE79;
+    font-size: 1.5em;
+    color: #181818;
+}
+.state{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+.state input{
+    aspect-ratio: 1;
+    width:30px 
+}
+#status:active{
+    background-color: #00E472;
+}
+.state label{
+    color: #fff;
+    font-size: 1.5em;
+}
+.display-grid{
+    display: grid !important;
+}
+#remove{
+    position: absolute;
+    background-color: #00CE79;
+    padding: 10px;
+    border-radius: 100%;
+    transform: rotate(120deg);
+    right: -5%;
+    top: -2%;
+}
+.btn{
+    padding: 5px;
+    margin: 5px;
+    font-size: 1.5em;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">Library</h1>
+        <div class="add-btn">
+            <img src="images/plus-solid.svg" alt="plus-solid"  width="30px">
+            <h1>Add New Book</h1>
+        </div>
+    </header>
+    <div class="new-book-sec">
+        <div class="form">
+            <input type="text" id="title" placeholder="title">
+            <input type="text" id="author" placeholder="author">
+            <input type="number" id="pages" placeholder="pages">
+            <div class="state">
+                <label for="status">I have read it.</label>
+                <input type="checkbox" id="status" checked="checked"> 
+            </div>
+            <input type="button" value="add" id="add">
+            <img src="images/plus-solid.svg" alt="" width="40px" id="remove" onclick="hideForm()">
+        </div>
+    </div>
+    <div id="container">
+        
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
